@@ -1,0 +1,15 @@
+[package]
+name = "doi2haya"
+version = "0.1.0"
+edition = "2024"
+description = "Convert a DOI to a Hayagriva YAML bibliography entry for Typst"
+license = "MIT"
+repository = "https://github.com/Haouo/doi2haya"
+readme = "README.md"
+keywords = ["doi", "hayagriva", "typst", "bibliography", "citation"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+biblatex = "0.12"
+hayagriva = { version = "0.10.1", default-features = false, features = ["biblatex"] }
+percent-encoding = "2.3"
